@@ -1,0 +1,469 @@
+<html lang="fa" dir="rtl">
+<head>
+    <title>سوپر اپلیکیشن موبایل و ویندوز</title>
+    <link rel="icon" type="image/icon" href="IMAGES/icoon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #424242;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .items {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 80px;
+        }
+
+        .pcs{
+            display: flex;
+            gap: 28px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 80px;
+        }
+
+        @media (max-width: 480px) {
+            .items {
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .items {
+                gap: 30px;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .items {
+                gap: 28px;
+            }
+        }
+
+        .item, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12, .item13, .item14 {
+            box-sizing: border-box;
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0 0px 20px rgb(255, 255, 255);
+            width: 150px;
+            height: 150px;
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+            transition: transform 0.4s ease;
+            justify-content: center;
+        }
+
+        .pc, .pc2, .pc3, .pc4, .pc5, .pc6, .pc7, .pc8, .pc9, .pc10, .pc11, .pc12, .pc13, .pc14{
+            box-sizing: border-box;
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0 0 20px rgb(255, 255, 255);
+            width: 150px;
+            height: 150px;
+            cursor: pointer;
+            background-position: center;
+            background-size: cover;
+            justify-content: center;
+            transition: all 0.4s ease;
+        }
+        .item { background-image: url(IMAGES/telewebion.webp); }
+        .item2 { background-image: url(IMAGES/MINIBAZI.webp); }
+        .item3 { background-image: url(IMAGES/internet.webp); }
+        .item4 { background-image: url(IMAGES/shazem.webp); }
+        .item5 { background-image: url(IMAGES/tarjome.webp); }
+        .item6 { background-image: url(IMAGES/filetolink.webp); }
+        .item7 { background-image: url(IMAGES/shortlink.webp); }
+        .item8 { background-image: url(IMAGES/barcode.webp); }
+        .item9 { background-image: url(IMAGES/barcodesaz.webp); }
+        .item10 { background-image: url(IMAGES/shortpi.webp); }
+        .item11 { background-image: url(IMAGES/mobileprice.webp); }
+        .item12 { background-image: url(IMAGES/digipay.webp); }
+        .item13 { background-image: url(IMAGES/snapp.webp); }
+        .item14 { background-image: url(IMAGES/pelakyab.webp); }
+
+        .pc { background-image: url(IMAGES/rar.png); }
+        .pc2 { background-image: url(IMAGES/downwin.png); }
+        .pc3 { background-image: url(IMAGES/word.png); }
+        .pc4 { background-image: url(IMAGES/exel.png); }
+        .pc5 { background-image: url(IMAGES/power.png); }
+        .pc6 { background-image: url(IMAGES/access.png); }
+        .pc7 { background-image: url(IMAGES/aftereffect.png); }
+        .pc8 { background-image: url(IMAGES/ps.png); }
+        .pc9 { background-image: url(IMAGES/resize.png); }
+        .pc10 { background-image: url(IMAGES/gamedownload.png); }
+        .pc11 { background-image: url(IMAGES/idm.png); }
+        .pc12 { background-image: url(IMAGES/cpu-z.png); }
+        .pc13 { background-image: url(IMAGES/prisepc.png); }
+        .pc14 { background-image: url(IMAGES/driver.png); }
+
+        .item:hover, .item2:hover, .item3:hover, .item4:hover, .item5:hover, .item6:hover, .item7:hover, .item8:hover, .item9:hover, .item10:hover, .item11:hover, .item12:hover, .item13:hover, .item14:hover {
+            transform:translateY(-20px);
+        }
+
+        .pc:hover, .pc2:hover, .pc3:hover, .pc4:hover, .pc5:hover, .pc6:hover, .pc7:hover, .pc8:hover, .pc9:hover, .pc10:hover, .pc11:hover, .pc12:hover, .pc13:hover, .pc14:hover{
+            transform: translateY(-20px);
+            
+        }
+
+        .h21{
+            text-align: center;
+            color: #fff;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            
+        }
+
+        .h21:hover{
+            color: rgb(0, 255, 128);
+        }
+
+        .h2{
+            display: inline-block;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .h2:hover{
+            color: rgb(0, 255, 128);
+        }
+        .itemclick {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* استایل اسلایدر ساده */
+        .slider-section {
+            width: 100%;
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .slider-title {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+
+        .card {
+            background: #464646;
+            box-shadow: 0 10px 20px rgb(0, 255, 128);
+            color: white;
+            border-radius: 16px;
+            padding: 16px;
+            position: relative;
+            text-align: center;
+        }
+
+
+        .simple-slider {
+            width: 600px;
+            max-width: 90%;
+            height: 350px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            background: #000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        .slider-image {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .slider-image.active {
+            opacity: 1;
+        }
+
+
+        /* رسپانسیو */
+        @media (max-width: 768px) {
+            .simple-slider {
+                height: 250px;
+            }
+            
+            .image-caption {
+                font-size: 12px;
+                padding: 5px 10px;
+                bottom: 10px;
+                right: 10px;
+            }
+            
+            .slider-dots {
+                bottom: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .simple-slider {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="h21">به دلیل ناپایداری اینترنت، دسترسی به برخی سایت‌ها ممکن است در زمان‌های مختلف متفاوت باشد.</h2>
+        <div class="card">
+  <h2 class="h2">نرم افزار موبایل</h2>
+</div>
+    </a>
+    <div class="items">
+        <a href="https://telewebion.com/" target="_blank" class="itemclick">
+            <div class="item"></div>
+        </a>
+        <a href="https://my-mini-games.com/" target="_blank" class="itemclick">
+            <div class="item2"></div>
+        </a>
+        <a href="https://pishkhan24.com/internetpackage/" target="_blank" class="itemclick">
+            <div class="item3"></div>
+        </a>
+        <a href="https://www.shazam.com/gb" target="_blank" class="itemclick">
+            <div class="item4"></div>
+        </a>
+        <a href="https://translate.google.com/" target="_blank" class="itemclick">
+            <div class="item5"></div>
+        </a>
+        <a href="https://biaupload.com/" target="_blank" class="itemclick">
+            <div class="item6"></div>
+        </a>
+        <a href="https://b2n.ir/" target="_blank" class="itemclilck">
+        <div class="item7"></div>
+        </a>
+        <a href="https://www.online-qr-scanner.com/fa/online-qr-code-scanner" target="_blank" class="itemclick">
+        <div class="item8"></div>
+        </a>
+        <a href="https://qr.negareno.com/" target="_blank" class="itemclick">
+        <div class="item9"></div>
+        </a>
+        <a href="https://imagecompressor.com/" target="_blank" class="itemclick">
+        <div class="item10"></div>
+        </a>
+        <a href="https://mobo.news/pricelist/" target="_blank" class="itemclick">
+            <div class="item11"></div>        
+        </a>
+        <a href="https://app.mydigipay.com/" target="_blank" class="itemclick">
+        <div class="item12"></div>
+        </a>
+        <a href="https://app.snapp.taxi/" tabindex="_blank" class="itemclick">
+            <div class="item13"></div>
+        </a>
+            <a href="https://cardinfo.ir/info/car_plate" target="_blank" class="itemclick">
+             <div class="item14"></div>
+            </a>
+        
+    </div>
+<a href="irani.html" target="_blank" class="itemclick">
+    <div class="slider-section">
+        <h2 class="slider-title">پلتفرم ایرانی</h2>
+        <div class="simple-slider" id="slider1">
+            <!-- تصاویر اینجا با جاوااسکریپت اضافه می‌شوند -->
+        </div>
+    </div>
+</a>
+<a href="kharegi.html" target="_blank" class="itemclick">
+    <div class="slider-section">
+        <h2 class="slider-title">پلتفرم خارجی</h2>
+        <div class="simple-slider" id="slider2">
+            <!-- تصاویر اینجا با جاوااسکریپت اضافه می‌شوند -->
+        </div>
+    </div>
+</a>
+
+        <div class="card">
+  <h2 class="h2">نرم افزار های ویندوز</h2>
+</div>
+        </a>
+    <div class="pcs">
+        <a href="https://soft98.ir/software/compress/21-winrar-full.html" target="_blank" class="itemclick">
+            <div class="pc"></div>
+        </a>
+        <a href="https://soft98.ir/os/windows/17807-1-%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF-%D9%88%DB%8C%D9%86%D8%AF%D9%88%D8%B2-%D8%AF%D9%87-%D8%A2%DB%8C%D9%88-8b.html" target="_blank" class="itemclick">
+            <div class="pc2"></div>
+        </a>
+        <a href="https://www.yasdl.com/188626/%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF-%D9%88%D8%B1%D8%AF-2016-microsoft-word-25.html" target="_blank" class="itemclick">
+            <div class="pc3"></div>
+        </a>
+        <a href="https://www.yasdl.com/113585/%d8%af%d8%a7%d9%86%d9%84%d9%88%d8%af-microsoft-excel-2016-24.html" target="_blank" class="itemclick">
+            <div class="pc4"></div>
+        </a>
+        <a href="https://www.yasdl.com/113589/%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF-microsoft-powerpoint-2016-23.html/" target="_blank" class="itemclick">
+            <div class="pc5"></div>
+        </a>
+        <a href="https://www.yasdl.com/tag/%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF-microsoft-access-2016" target="_blank" class="itemclick">
+            <div class="pc6"></div>
+        </a>
+        <a href="https://soft98.ir/multi-media/edit-video/2416-%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF-%D8%A7%D9%81%D8%AA%D8%B1-%D8%A7%D9%81%DA%A9%D8%AA-%D8%B3%D9%87.html" target="_blank" class="itemclick">
+        <div class="pc7"></div>
+        </a>
+        <a href="https://soft98.ir/software/pic-tools/3153-%D8%AF%D8%A7%D9%86%D9%84%D9%80%D9%88%D8%AF-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D9%80%D9%80%D8%B2%D8%A7%D8%B1-%D9%81%D9%80%D8%AA%D9%80%D9%88%D8%B4%D9%80%D8%A7%D9%BE.html" target="_blank" class="itemclick">
+        <div class="pc8"></div>
+        </a>
+        <a href="https://imageresizer.com/" target="_blank" class="itemclick">
+        <div class="pc9"></div>
+        </a>
+        <a href="https://tehranpcservice.ir/" target="_blank" class="itemclick">
+        <div class="pc10"></div>
+        </a>
+        <a href="https://soft98.ir/internet/download-manager/4-internet-download-manager-4.html" target="_blank" class="itemclick">
+            <div class="pc11"></div>        
+        </a>
+        <a href="https://soft98.ir/software/717-cpu-z.html" target="_blank" class="itemclick">
+        <div class="pc12"></div>
+        </a>
+        <a href="https://sakhtafzarmag.com/%D9%84%DB%8C%D8%B3%D8%AA-%D9%82%DB%8C%D9%85%D8%AA-%D9%82%D8%B7%D8%B9%D8%A7%D8%AA-%DA%A9%D8%A7%D9%85%D9%BE%DB%8C%D9%88%D8%AA%D8%B1/" target="_blank" class="itemclick">
+            <div class="pc13"></div>
+        </a>
+            <a href="https://soft98.ir/software/drivers/16536-iobit-driver-booster-full-dl.html" target="_blank" class="itemclick">
+             <div class="pc14"></div>
+            </a>
+
+    <script>
+        // داده‌های اسلایدها
+        const slider1Images = [
+            {
+                url: "IMAGES/rubika.webp",
+                
+            },
+            {
+                url: "IMAGES/sorosh.webp",
+                
+            },
+            {
+                url: "IMAGES/eita.webp",
+                
+            }
+        ];
+
+        const slider2Images = [
+            {
+                url: "IMAGES/youtube.webp",               
+            },
+            {
+                url: "IMAGES/telegram.webp",              
+            },
+            {
+                url: "IMAGES/insta.webp",
+            }
+        ];
+
+        // تابع ایجاد اسلایدر ساده
+        function createSimpleSlider(sliderId, images) {
+            const slider = document.getElementById(sliderId);
+            if (!slider) {
+                console.error(`اسلایدر با ID ${sliderId} یافت نشد!`);
+                return;
+            }
+
+            // پاک کردن محتوای قبلی
+            slider.innerHTML = '';
+            
+            // ایجاد دایره‌های ناوبری
+            const dotsContainer = document.createElement('div');
+            dotsContainer.className = 'slider-dots';
+            
+            // ایجاد تصاویر
+            images.forEach((image, index) => {
+                // ایجاد عنصر تصویر
+                const imgDiv = document.createElement('div');
+                imgDiv.className = 'slider-image';
+                imgDiv.style.backgroundImage = `url('${image.url}')`;
+                
+                // اضافه کردن کپشن
+                const caption = document.createElement('div');
+                caption.className = 'image-caption';
+                caption.textContent = image.caption;
+                imgDiv.appendChild(caption);
+                
+                slider.appendChild(imgDiv);
+                
+                // ایجاد دایره ناوبری
+                const dot = document.createElement('div');
+                dot.className = 'slider-dot';
+                if (index === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => {
+                    showSlide(index);
+                });
+                dotsContainer.appendChild(dot);
+            });
+            
+            // اضافه کردن دایره‌ها به اسلایدر
+            slider.appendChild(dotsContainer);
+            
+            let currentIndex = 0;
+            const imageElements = slider.querySelectorAll('.slider-image');
+            const dotElements = slider.querySelectorAll('.slider-dot');
+            
+            // نمایش اولین تصویر
+            if (imageElements.length > 0) {
+                imageElements[0].classList.add('active');
+            }
+            
+            // تابع نمایش یک اسلاید خاص
+            function showSlide(index) {
+                // مخفی کردن همه تصاویر
+                imageElements.forEach(img => {
+                    img.classList.remove('active');
+                });
+                
+                // غیرفعال کردن همه دایره‌ها
+                dotElements.forEach(dot => {
+                    dot.classList.remove('active');
+                });
+                
+                // نمایش تصویر انتخاب شده
+                imageElements[index].classList.add('active');
+                dotElements[index].classList.add('active');
+                currentIndex = index;
+            }
+            
+            // تابع نمایش اسلاید بعدی
+            function nextSlide() {
+                const nextIndex = (currentIndex + 1) % images.length;
+                showSlide(nextIndex);
+            }
+            
+            // شروع تایمر برای تغییر اتوماتیک هر 1 ثانیه
+            let slideInterval = setInterval(nextSlide, 2000);
+            
+            // متوقف کردن تایمر هنگام hover روی اسلایدر
+            slider.addEventListener('mouseenter', () => {
+                clearInterval(slideInterval);
+            });
+            
+            // شروع مجدد تایمر هنگام خروج از اسلایدر
+            slider.addEventListener('mouseleave', () => {
+                clearInterval(slideInterval);
+                slideInterval = setInterval(nextSlide, 2000);
+            });
+            
+            console.log(`اسلایدر ${sliderId} با ${images.length} تصویر ایجاد شد`);
+        }
+        
+        // وقتی صفحه لود شد، اسلایدرها را ایجاد کن
+        document.addEventListener('DOMContentLoaded', function() {
+            createSimpleSlider('slider1', slider1Images);
+            createSimpleSlider('slider2', slider2Images);
+            
+            console.log('همه اسلایدرها ایجاد شدند');
+        });
+    </script>
+</body>
+</html>
