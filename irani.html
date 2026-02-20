@@ -1,0 +1,121 @@
+<html lang="fa" dir="rtl">
+<head>
+    <title> پلتفرم ایرانی</title>
+    <link rel="icon" type="image/icon" href="IMAGES/logo-site.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #424242;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .items {
+            display: flex;
+            gap: 28px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 80px;
+        }
+
+        .h2{
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .h2:hover{
+            color: #02f4f4;
+        }
+        @media (max-width: 480px) {
+            .items {
+                gap: 48px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .items {
+                gap: 12px;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .items {
+                gap: 56px;
+            }
+        }
+
+        .item, .item2, .item3{
+            box-sizing: border-box;
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0 0px 20px rgb(192, 192, 192);
+            width: 150px;
+            height: 150px;
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+            transition: transform 0.4s ease;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item { background-image: url(IMAGES/eita.webp); }
+        .item2 { background-image: url(IMAGES/sorosh.webp); }
+        .item3 { background-image: url(IMAGES/rubika.webp); }
+
+
+        .item:hover, .item2:hover, .item3:hover {
+            transform: scale(1.10);
+        }
+        .itemclick {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* رسپانسیو */
+        @media (max-width: 768px) {
+            .simple-slider {
+                height: 250px;
+            }
+            
+            .image-caption {
+                font-size: 12px;
+                padding: 5px 10px;
+                bottom: 10px;
+                right: 10px;
+            }
+            
+            .slider-dots {
+                bottom: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .simple-slider {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+  <h2 class="h2">پلتفرم ایرانی</h2>
+               <div class="items">
+        <a href="https://web.eitaa.com/" target="_blank" class="itemclick">
+            <div class="item"></div>
+        </a>
+        <a href="https://web.splus.ir/" target="_blank" class="itemclick">
+            <div class="item2"></div>
+        </a>
+        <a href="https://web.rubika.ir/" target="_blank" class="itemclick">
+            <div class="item3"></div>
+</div>
+
+
+</body>
+</html>
