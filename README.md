@@ -28,4 +28,4 @@ Key Features:
 Optimized Performance: Total size is less than 1MB.
 
 
-the site is demo version.
+
